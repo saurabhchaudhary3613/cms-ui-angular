@@ -1,0 +1,39 @@
+.cms-header {
+  font-size: 22px;
+  background: grey;
+  color: #fff;
+  padding: 12px;
+  float: left;
+  width: 100%;
+
+  .cms-logo {
+    float: left;
+    width: 66%;
+  }
+
+  .login-date {
+    float: left;
+    width: 11%;
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  .user-name {
+    font-size: 14px;
+    width: 12%;
+    float: left;
+    margin-top: 6px;
+  }
+
+  .left-options {
+    float: right;
+    font-size: 14px;
+    width: 10%;
+    text-align: right;
+    margin-top: 6px;
+    .seprator{
+      margin: 0 10px;
+    }
+  }
+
+}

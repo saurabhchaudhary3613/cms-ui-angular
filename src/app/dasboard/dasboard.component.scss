@@ -1,0 +1,26 @@
+/*Dashboard CSS*/
+.dashboard-container {
+  float: left;
+  width: 100%;
+}
+.dashboard-info {
+    border-bottom: 1px dotted grey;
+      padding: 5px 0;
+  }
+  .dashboard-info-last {
+    border-bottom: none;
+  }
+  .dashboard-info .left{
+    width: 12%;
+    font-weight: bold;
+  }
+  
+  .dashboard-info .list-view ul{
+    list-style: none;
+  }
+  .dashboard-info .list-view li .left{
+    font-weight: bold;
+  }
+  input.chk-cms-isactive {
+    width: 1%;
+  }
