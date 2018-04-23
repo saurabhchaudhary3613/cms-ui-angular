@@ -14,6 +14,7 @@ import { AnalyticsComponent } from './analytics/analytics.component';
 import { ViewStrategyComponent } from './strategy/view-strategy/view-strategy.component';
 import { AddNewStrategyComponent } from './strategy/add-new-strategy/add-new-strategy.component';
 import { SearchStrategyComponent } from './strategy/search-strategy/search-strategy.component';
+import { DashboardService } from './dasboard/dashboard.service';
 
 
 @NgModule({
@@ -35,7 +36,7 @@ import { SearchStrategyComponent } from './strategy/search-strategy/search-strat
     AppRoutingModule,
     NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [DashboardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

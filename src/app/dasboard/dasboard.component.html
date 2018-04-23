@@ -2,24 +2,24 @@
   <!-- <div class="page-title"></div> -->
   <div class="dashboard-info">
       <label class="left">Active Customer</label>
-      <label class="right">50</label>
+      <label class="right">{{data.activeCustomer}}</label>
   </div>
   <div class="dashboard-info">
       <label class="left">Inactive Customers</label>
-      <label class="right">45</label>
+      <label class="right">{{data.inActiveCustomer}}</label>
   </div>
   <div class="dashboard-info">
       <label class="left">App Accessed </label>
       <div class="list-view">
           <ul>
               <li>
-                  <label class="left">Today</label><label>67</label>
+                  <label class="left">Today</label><label>{{data.addAccessedToday}}</label>
               </li>
               <li>
-                  <label class="left">Yesterday</label><label>35</label>
+                  <label class="left">Yesterday</label><label>{{data.addAccessedYesterday}}</label>
               </li>
               <li>
-                  <label class="left">Weekly</label><label>120</label>
+                  <label class="left">Weekly</label><label>{{data.addAccessedWeekly}}</label>
               </li>
           </ul>
           
@@ -27,19 +27,19 @@
   </div>
   <div class="dashboard-info">
       <label class="left">Last Weather feed</label>
-      <label class="right">17-10-2017</label>
+      <label class="right">{{data.lastWeatherFeed}}</label>
   </div>
   <div class="dashboard-info">
           <label class="left">Last Ussage file</label>
-          <label class="right">03-04-2018</label>
+          <label class="right">{{data.lastUssagefile}}</label>
       </div>
   <div class="dashboard-info">
       <label class="left">App Installation</label>
-      <label class="right">25</label>
+      <label class="right">{{data.appInstalled}}</label>
   </div>
   <div class="dashboard-info dashboard-info-last">
       <label class="left">Access Devices</label>
-      <label class="right">25</label>
+      <label class="right">{{data.accessDevices}}</label>
   </div>
 
 </div>
