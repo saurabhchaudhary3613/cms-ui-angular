@@ -1,0 +1,102 @@
+.form-container {
+    float: left;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin-top:2px;
+    padding: 5px;
+    border: 1px solid gray;
+}
+
+.form-section {
+    border-bottom: 1px dotted grey;
+    margin: 10px 0 10px 0;
+    float: left;
+    width: 98%;
+}
+.cms-form-label {
+    float: left;
+    width:12%;
+}
+
+.form-group {
+    margin-bottom: 5px;
+    float: left;
+    width: 100%;
+}
+.form-group select,  .form-group input, .form-group textarea{
+    width: 20%;
+}
+.checkbox-group {
+    float: left;
+    width: 85%;
+}
+.chk-holder {
+    float:left;
+    margin-right: 20px;
+    width: 15%;
+}
+.chk-holder .chk-cms {
+    margin-top:6px;
+
+}
+.time-chk-holder {
+    float: left;
+    width: 100%;
+}
+.chk-holder span {
+    float: left;
+}
+.action-container {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.add-action {
+    text-align: center;
+}
+.required-indicator {
+    float: right;
+    width: 25%;
+    font-size: 11px;
+    margin-top: -3px;
+    color: red;
+    text-align: right;
+}
+.required-indicator span {
+    font-size: 14px;
+}
+
+.required {
+    font-size: 16px;
+    color: red;
+    float: left;
+}
+.update-link-top {
+    float: left;
+    width: 45%;
+    color: #0088cc;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.order-title {
+    float: left;
+    margin-right: 4px;
+
+}
+
+.ng-valid[required], .ng-valid.required  {
+    border-left: 3px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+    border-left: 3px solid #a94442; /* red */
+}
+select.search-select {
+    width: 12%;
+}
+input.question-input {
+    width: 12%;
+}
+/*CMS form CSS Ends*/

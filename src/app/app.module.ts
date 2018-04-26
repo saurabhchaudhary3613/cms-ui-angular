@@ -2,8 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbdModalBasic } from './modal-basic';
+import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 import { AppComponent } from './app.component';
+
 import { CmsHeader } from './common/header/cms-header';
 import { CmsNavbar } from './common/navbar/navbar';
 import { DasboardComponent } from './dasboard/dasboard.component';
@@ -15,6 +17,7 @@ import { ViewStrategyComponent } from './strategy/view-strategy/view-strategy.co
 import { AddNewStrategyComponent } from './strategy/add-new-strategy/add-new-strategy.component';
 import { SearchStrategyComponent } from './strategy/search-strategy/search-strategy.component';
 import { DashboardService } from './dasboard/dashboard.service';
+import { StrategyService } from './strategy/strategy.service';
 
 
 @NgModule({
@@ -33,10 +36,11 @@ import { DashboardService } from './dasboard/dashboard.service';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     NgbModule.forRoot()
   ],
-  providers: [DashboardService],
+  providers: [DashboardService, StrategyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

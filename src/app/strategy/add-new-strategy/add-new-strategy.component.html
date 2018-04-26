@@ -1,1 +1,66 @@
-<p>Add New Strategy Works...</p>
+
+<div class="form-container">
+    
+        <div class="required-indicator"><span>*</span>Required fields</div>
+        <div class="form-section">
+            <div class="form-group">
+                <label class="cms-form-label"><span class="required">*</span>Topic</label>
+                <input type="number" [(ngModel)]="data.topicDisplayOrder" class="display-order-input" placeholder="Display Order"/>
+                <select required class="cms-form-control" [(ngModel)]="data.topicTitle">
+                    <option>Way To Save</option>
+                    <option>Learning</option>
+                </select>
+                        
+            </div>
+            <div class="form-group">
+                <label class="cms-form-label">Description</label>
+                <textarea class=" cms-form-control topic-description" [(ngModel)]="data.description" rows="2" cols="80">
+                </textarea>
+                        
+            </div>
+        </div>
+        <div class="form-section">
+            <label class="cms-form-label"><span class="required">*</span>Delivery</label>
+            <div class="checkbox-group">
+                <div class="chk-holder"><span>Monday</span><input class=" chk-cms" type="checkbox"  [checked]="delivery1"  /></div>
+                <div class="chk-holder"><span>Tuesday</span><input class=" chk-cms" type="checkbox" ng-checked = 'ctrl.strategyDetails.delivery2' ng-model= "ctrl.strategyDetails.delivery2"  /></div>
+                <div class="chk-holder"><span>Wednesday</span><input class=" chk-cms" type="checkbox" ng-checked = 'ctrl.strategyDetails.delivery3' ng-model= "ctrl.strategyDetails.delivery3"   /></div>
+                <div class="chk-holder"><span>Thursday</span><input class=" chk-cms" type="checkbox" ng-checked = 'ctrl.strategyDetails.delivery4' ng-model= "ctrl.strategyDetails.delivery4"  /></div>
+                <div class="chk-holder"><span>Friday</span><input class=" chk-cms" type="checkbox" ng-checked = 'ctrl.strategyDetails.delivery5' ng-model= "ctrl.strategyDetails.delivery5"  /></div>
+                <div class="chk-holder"><span>Saturday</span><input class=" chk-cms" type="checkbox" ng-checked = 'ctrl.strategyDetails.delivery6' ng-model= "ctrl.strategyDetails.delivery6" /></div>
+                <div class="chk-holder"><span>Sunday</span><input class=" chk-cms" type="checkbox"  ng-checked = 'ctrl.strategyDetails.delivery7' ng-model= "ctrl.strategyDetails.delivery7"  /></div>
+                
+            </div>
+            <div class="form-group time-chk-holder">
+                <label class="cms-form-label"><span class="required">*</span>Frequency</label>
+                <div class="checkbox-group">
+                    <div class="chk-holder"><span>Daily</span><input class=" chk-cms" name="frequency" [ngModel]="data.frequency" type="radio" value="Daily"/></div>
+                    <div class="chk-holder"><span>Weekly</span><input class=" chk-cms" name="frequency" [ngModel]="data.frequency" type="radio" value="Weekly" /></div>
+                    <div class="chk-holder"><span>Monthly</span><input class=" chk-cms" name="frequency" [ngModel]="data.frequency" type="radio" value="Monthly" /></div>
+                    <div class="chk-holder"><span>Once</span><input class=" chk-cms" name="frequency" [ngModel]="data.frequency" type="radio" value="Once"/></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="form-section">
+            <div class="form-group">
+                <label class="cms-form-label">Title</label>
+                <select class=" cms-form-control" [(ngModel)]="data.title">
+                        <option>Test</option>
+                        <option>Title 2</option>
+                        <option>Title 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                    <label class="cms-form-label">Homepage Tip</label>
+                    <input type="text"  [(ngModel)]="data.homePageTip" class=" cms-form-control" />
+                </div>
+        </div>
+        <div class="action-container">
+                <!-- <div class="update-link-top" ng-click="ctrl.updateInfo()">Update Information</div> -->
+            <button (click)="save()" class="btn btn-primary btn-sm">Submit</button>
+        </div>
+
+   
+
+</div>
